@@ -1,0 +1,21 @@
+## application:
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        provider:
+#          oidc:
+#            issuer-uri: http://localhost:9080/auth/realms/shaleh
+#        registration:
+#          oidc:
+#            client-id: internal
+#            client-secret: internal
+keycloak:
+#  main-url: http://localhost:9080/auth/realms/shaleh
+#  openid-url: ${keycloak.main-url}/protocol/openid-connect
+
+  realm: shaleh
+  resource: shaleh
+  auth-server-url: http://localhost:9080/auth
+#  username: admin
+#  password: admin
